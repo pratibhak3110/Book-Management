@@ -1,0 +1,31 @@
+<div class="container mt-3">
+    <button class="btn btn-primary" (click)="addBook()">Add New Book</button>
+    <br><br>
+    <div class="row">
+        <table class="table table-hover table-bordered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let book of bookArray">
+                <th>{{ book.id }}</th>
+                <td><img src="{{ book.img }}" alt="..." height="100" width="150"></td>
+                <td><strong> {{ book.name}} </strong></td>
+                <td><strong> {{ book.author }} </strong></td>
+                <td>
+                    <button class="btn btn-primary" (click)="viewBook(book.id)">View</button>&nbsp;
+                    <button class="btn btn-success" (click)="editBook(book.id)">Update</button>&nbsp;
+                    <button class="btn btn-danger" (click)="deleteBook(book.id)">Delete</button>&nbsp;
+                    <br>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</div>

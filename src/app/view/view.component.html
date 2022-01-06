@@ -1,0 +1,85 @@
+<!-- <div class="container mt-3">
+    
+    <h1>Book Details</h1>
+
+    <button class= "btn btn-primary" (click)= " backToHome()">Back to Home</button>
+   <form  [formGroup]="bookForm">
+    <div>
+        <strong>ID:</strong>
+        <p  
+        formControlName="id">{{ id }}</p>
+    </div>
+
+    <div>
+        <strong>Book Name:</strong>
+        <p formControlName="name">{{ name }}</p>
+    </div>
+
+    <div>
+        <strong>Author Name:</strong>
+        <p formControlName= "author">{{ author }}</p>
+    </div>
+
+    <div>
+        <strong>Image Url:</strong>
+        <p formControlName= "img">{{ img }}</p>
+    </div>
+
+    <div>
+        <strong>Description: </strong>
+        <p formControlName="description">{{ description }}</p>
+    </div>
+</form>
+</div> -->
+
+
+
+
+<div class="container mt-3">
+
+    <button class= "btn btn-primary" (click)= " backToHome()">Back to Home</button>
+
+    <form [formGroup]="bookForm">
+
+        <div class="form-group">
+            <label><strong>ID: </strong></label>
+            <input
+                 formControlName="id"
+                 type="number"
+                 class="form-control" readonly>
+        </div>
+
+        <div class="form-group">
+            <label><strong>Image Url: </strong></label>
+            <input
+                 formControlName="img"
+                 type="text"
+                 class="form-control" readonly>
+        </div>
+
+        <div class="form-group">
+            <label><strong>Book Name: </strong></label>
+            <input
+                 formControlName="name"
+                 type="text"
+                 class="form-control" readonly>
+        </div>
+
+        <div class="form-group">
+            <label><strong>Author Name: </strong></label>
+            <input
+                 formControlName="author"
+                 type="text"
+                 class="form-control" readonly>
+        </div>
+
+        <div class="form-group">
+            <label><strong>Description: </strong></label>
+            <textarea
+                 formControlName="description"
+                 type="text"
+                 class="form-control" readonly>
+            </textarea>
+        </div>
+    </form>
+</div>

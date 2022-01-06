@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "img": "https://images-na.ssl-images-amazon.com/images/I/51wbVQTpTgL._SX339_BO1,204,203,200_.jpg",
+      "name": "Wings of Fire!!!!!!!!",
+      "author": "Dr. A. P. J. Abdul Kalam",
+      "description": "Wings of Fire is an autography of APJ Abdul Kalam covering his early life and his work in Indian space research and missile programs. It is the story of a boy from a humble background who went on to become a key player in Indian space research/Indian missile programs and later became the president of India.",
+      "id": 1
+    },
+    {
+      "img": "https://images-na.ssl-images-amazon.com/images/I/81dQwQlmAXL.jpg",
+      "name": "Rich dad poor dad",
+      "author": "Robert T. Kiyosaki",
+      "description": "Rich Dad Poor Dad is about Robert Kiyosaki and his two dads—his real father (poor dad) and the father of his best friend (rich dad)—and the ways in which both men shaped his thoughts about money and investing. He says that his poor dad went to Stanford and earned a Ph",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
